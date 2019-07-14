@@ -1,18 +1,38 @@
 {
   "Function with react import": {
-  "prefix": "fncr",
-  "body": [
-    "import React from 'react;",
-    "",
-    "function $1() {",
-    "    <>",
-    "      $2",
-    "    </>",
-    "  );",
-    "}",
-    "",
-    "export default $1;"
-  ],
-  "description": "Function with react import"
+    "prefix": "fncr",
+    "body": [
+      "import React from 'react';",
+      "",
+      "function $1() {",
+      "  return (",
+      "    <>",
+      "      $2",
+      "    </>",
+      "  );",
+      "}",
+      "",
+      "export default $1;"
+    ],
+    "description": "Function with react import"
+  },
+  "Class with react import": {
+    "prefix": "clsr",
+    "body": [
+      "import React from 'react';",
+      "",
+      "class $1 extends React.Component {",
+      "  render() {",
+      "    return (",
+      "      <>",
+      "        $2",
+      "      </>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "export default $1;"
+    ],
+    "description": "Class with react import"
   }
 }
